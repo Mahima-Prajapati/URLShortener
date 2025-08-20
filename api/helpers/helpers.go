@@ -6,10 +6,10 @@ import (
 )
 
 func EnforceHTTP(url string) string {
-	if url[:4] == "http" {
-		return "https://" + url
-	}
-	return url
+	if !strings.HasPrefix(url, "http://") && !strings.HasPrefix(url, "https://") {
+        return "https://" + url
+    }
+    return url
 }
 
 func RemoveDomainError(url string) bool {
