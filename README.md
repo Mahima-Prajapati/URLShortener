@@ -1,5 +1,3 @@
-# URLShortener
-
 # URL Shortener with Rate Limiting (Go + Fiber + Redis)
 
 ### A simple URL shortener service built with Golang, Fiber and Redis. The service allows you to shorten long URLs, create custom short URLs, set expiry times, and includes per-IP rate limiting to prevent abuse.
@@ -7,11 +5,11 @@
 
 ## Features
 
-### Shorten any valid URL
-### Set expiration times (default: 20 hours)
-### Rate limiting using Redis (default: 10 requests per 30 minutes per IP)
-### Automatic HTTPS enforcement (if no scheme provided)
-### Redirect counting (hit counter stored in Redis)
+#### Shorten any valid URL
+#### Set expiration times (default: 20 hours)
+#### Rate limiting using Redis (default: 10 requests per 30 minutes per IP)
+#### Automatic HTTPS enforcement (if no scheme provided)
+#### Redirect counting (hit counter stored in Redis)
 
 ## How It Works
 
@@ -90,7 +88,6 @@ docker-compose up --build
 #### This will:
 
 ##### Build and run the Go API on localhost:3000
-
 ##### Start Redis on localhost:6379
 
 ### Test the API
