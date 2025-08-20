@@ -74,7 +74,7 @@ Docker + Docker Compose      |
 
 ### Clone and Build
 ```sh
-git clone https://github.com/<your-username>/URLShortener.git
+git clone https://github.com/Mahima-Prajapati/URLShortener.git
 cd URLShortener
 ```
 
