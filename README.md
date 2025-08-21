@@ -5,11 +5,11 @@
 
 ## Features
 
-#### Shorten any valid URL
-#### Set expiration times (default: 20 hours)
-#### Rate limiting using Redis (default: 10 requests per 30 minutes per IP)
-#### Automatic HTTPS enforcement (if no scheme provided)
-#### Redirect counting (hit counter stored in Redis)
+#### - Shorten any valid URL
+#### - Set expiration times (default: 20 hours)
+#### - Rate limiting using Redis (default: 10 requests per 30 minutes per IP)
+#### - Automatic HTTPS enforcement (if no scheme provided)
+#### - Redirect counting (hit counter stored in Redis)
 
 ## How It Works
 
