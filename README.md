@@ -19,7 +19,7 @@ POST /api/v1
 #### Request Body
 ```json
 {
-    "url" : "https://www.youtube.com/watch?v=3ExDEeSnyvE&list=PL5dTjWUk_cPY"
+    "url" : "https://www.example.com/main?v=3ExDEeSnyvE&list="
 }
 ```
 
