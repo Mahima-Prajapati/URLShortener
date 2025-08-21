@@ -13,7 +13,7 @@
 
 ## How It Works
 
-### Shorten a URL
+### 1. Shorten a URL
 POST /api/v1
 
 #### Request Body
@@ -34,14 +34,14 @@ POST /api/v1
 }
 ```
 
-### Redirect to Original URL
+### 2. Redirect to Original URL
 GET /:url
 
 #### If you visit this, the service will:
 
-##### Look up the mapping in Redis
-##### Increment a redirect counter
-##### Redirect you (301) to the original URL
+##### a. Look up the mapping in Redis
+##### b. Increment a redirect counter
+##### c. Redirect you (301) to the original URL
 
 #### If the URL does not exist, it returns:
 ```json
@@ -50,7 +50,7 @@ GET /:url
 }
 ```
 
-### Rate Limiting
+### 3. Rate Limiting
 
 #### Each IP gets 10 requests per 30 minutes (configurable via API_QUOTA in .env)
 
